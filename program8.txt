@@ -1,0 +1,37 @@
+//8
+import java.io.*;
+import java.util.*;
+
+public class Mirror
+{
+public static void main(String arg[])throws Exception
+{
+int n,i,m=0,f=0;
+Scanner sc=new Scanner(System.in);
+n= sc.nextInt();
+int a[]=new int[n];
+int b[]=new int[n];
+for(i=0;i<n;i++)
+{
+a[i]=sc.nextInt();
+b[i]=a[i];
+}
+for(i=0;i<n;i++)
+{
+m=a[i];
+a[m]=i;
+}
+for(i=0;i<n;i++)
+{
+if(a[i]!=b[i])
+{
+f=1;
+break;
+}
+}
+if(f==1)
+System.out.println("Not a mirror inverse");
+else
+System.out.println("Mirror inverse");
+}
+}

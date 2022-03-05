@@ -1,0 +1,26 @@
+//5
+import java.io.*;
+import java.util.*;
+
+public class P&C
+{
+public int fact(int n)
+{
+if(n==0)
+return 1;
+else
+return(n*fact(n-1));
+}
+public static void main(String arg[])throws Exception
+{
+int n,r,p,c;
+Scanner sc=new Scanner(System.in);
+n= sc.nextInt();
+r= sc.nextInt();
+P&C x=new P&C();
+p= x.fact(n)/x.fact(n-r);
+c= x.fact(n)/(x.fact(r)*x.fact(n-r));
+System.out.println(p);
+System.out.println(c);
+}
+}

@@ -1,0 +1,18 @@
+//3
+import java.io.*;
+import java.util.*;
+
+public class factorial
+{
+public static void main(String arg[])throws Exception
+{
+int i,f=1,n;
+Scanner sc=new Scanner(System.in);
+n= sc.nextInt();
+for(i=1;i<=n;i++)
+{
+f=f*i;
+}
+System.out.println(f);
+}
+}
